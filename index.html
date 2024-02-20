@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url(https://fonts.google.com/specimen/Outfit);
+    *{
+      margin: 0px;
+      padding: 0px;
+      
+    }
+    body{
+      background-color: hsl(217, 54%, 11%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      font-family: 'outfit',sans-serif;
+    }
+    .container{
+      max-width:340px;
+      margin: 0 auto;
+      background-color: hsl(216, 50%, 16%);
+      border-radius:20px ;
+      height: 592px;
+    }
+    .card{
+      padding: 24px;
+      
+    }
+    .card .nft{
+      width: 100%;
+      border-radius: 20px;
+      margin-bottom: 26px;
+      height: 294px;
+    }
+    .blue{
+      color:hsl(178, 100%, 50%) ;
+      align-items: center;
+      display: flex;
+
+    }
+    .blue1{
+      color:hsl(178, 100%, 50%) ;
+      margin-left: 10px;
+    }
+    .statis{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 20px;
+      margin-bottom: 24px;
+      
+    }
+    P{
+      COLOR: hsl(215, 51%, 70%);
+      font-size: 18px;
+    }
+    .footer{
+      display: flex;
+      
+      align-items: center;
+    }
+    .footer p {
+      margin-left: 20px;
+      align-items: center;  
+     display: flex;  }
+    .profile{
+      width: 30px;
+      border:  solid white;
+      border-radius: 50px;
+    }
+    .eth{
+      margin-right: 5px;
+    }
+    .clock{
+      align-items: center;
+      display: flex;
+    }
+    .title{
+      color:hsl(178, 100%, 50%) ;
+      margin-bottom: 20px;
+    }
+    .hr{
+      background-color:  hsl(0, 2%, 28%);
+      margin-bottom: 12px;
+      height: 0.2px;
+    }
+    .dis{
+      margin-bottom: 24px;
+    }
+
+  
+    
+  </style>
+</head>
+<body>
+
+  <div class="container">
+        <div class="card">
+              <img   class="nft" src="./images/image-equilibrium.jpg" alt="">
+              <div class="text">
+                <h2 class="title">Equilibrium #3429</h2>
+                <p class="dis">Our Equilibrium collection promotes balance and calm.</p>
+      
+                <div class="statis">
+                  <div class="blue"><img class="eth" src="./images/icon-ethereum.svg" alt="">0.041 ETH</div>
+                  <div class="clock"> <img src="./images/icon-clock.svg" alt=""><P > 3 days left</P></div>
+                </div>
+                <div class="hr"></div>
+                <div class="footer">
+                  <img class="profile" src="./images/image-avatar.png" alt="">
+                  <p  class="create">Creation of</p><span class="blue1">Jules Wyvern</span>
+                </div>
+              </div>  
+        </div>
+
+</div>
+  
+  
+  
+
+  
+</body>
+</html>
